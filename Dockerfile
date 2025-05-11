@@ -2,7 +2,7 @@ FROM alpine:latest
 
 RUN apk update && apk add --no-cache \
     bash \
-    man \
+    mandoc \
     less \
     coreutils \
     util-linux \
@@ -10,9 +10,9 @@ RUN apk update && apk add --no-cache \
     grep \
     procps \
     shadow \
-    inputils \
+    iputils \
     net-tools \
     nano \
-    curl
+    curl  
 
-CMD["/bin/bash"]
+CMD ["/bin/bash"]
